@@ -5,6 +5,7 @@ import github               from './images/github-icon.png'
 import linkedin             from './images/linkedin-icon.png'
 import mail                 from './images/mail-icon.png'
 import twitter              from './images/twitter-icon.png'
+import './contact.scss'
 
 class Contact extends Component {
   componentDidMount() {

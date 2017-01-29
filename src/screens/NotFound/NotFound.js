@@ -1,8 +1,14 @@
 import React from 'react';
+import './404.scss'
 
 const NotFound = () => {
   return (
-    <h1>not found component</h1>
+    <section>
+      <h1>
+        It seems you're lost. Obviously, this isn't a "real" but here's a gif for your efforts.
+      </h1>
+      <div className="four04" />
+    </section>
   );
 }
 

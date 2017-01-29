@@ -1,0 +1,20 @@
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.four04 {
+  background-image: url('404.gif');
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 500px;
+  margin: 25px auto;
+}
+
+@media only screen and (max-width: 550px) {
+  .four04 {
+    width: 80%;
+  }
+}

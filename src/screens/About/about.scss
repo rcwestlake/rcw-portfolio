@@ -1,0 +1,243 @@
+@import '../partials/colors';
+@import '../partials/fonts';
+
+.about-container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-left: 120px;
+}
+
+p {
+  font-family: $open-sans;
+}
+
+.left-intro {
+  display: inline-block;
+  width: 40%;
+
+  .greeting {
+    font-family: $raleway;
+    font-size: 80px;
+  }
+
+  .intro {
+    font-size: 18px;
+    letter-spacing: normal;
+    line-height: 30px;
+    margin-top: 15px;
+  }
+}
+
+.detail {
+  margin-top: 20px;
+
+  p {
+    font-size: 18px;
+    letter-spacing: normal;
+    line-height: 30px;
+    margin-top: 15px;
+  }
+
+  .expand-button {
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .expand-button-text {
+    font-size: 10px;
+  }
+}
+
+.right-intro {
+  float: right;
+  width: 45%;
+
+  .image {
+    background-image: url('../pages/about/images/rw-test-about.png');
+    background-size: cover;
+    background-position: top;
+    height: 500px;
+    width: 100%;
+  }
+
+  .right-content {
+    margin-top: 20px;
+    margin-left: 15px;
+
+    .aside-header {
+      color: $light-black;
+      font-family: $raleway;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    .fun-facts, .favorites, .articles {
+      li {
+        list-style-type: square;
+        line-height: 20px;
+        margin-left: 25px;
+      }
+    }
+  }
+}
+
+.section-header {
+  font-family: $raleway;
+  font-size: 45px;
+  font-weight: bold;
+  margin: 35px 0px;
+}
+
+.bottom-content {
+  width: 40%;
+  margin-bottom: 40px;
+
+  .quote {
+    font-family: $abril;
+    font-size: 30px;
+    margin: 80px 0;
+
+    .author {
+      font-size: 20px;
+      margin-top: 10px;
+      margin-left: 5px;
+    }
+  }
+
+  .content-block {
+    .section-header {
+      color: $gold;
+      font-size: 35px;
+    }
+
+    p {
+      margin-top: 15px;
+      letter-spacing: normal;
+      line-height: 20px;
+    }
+
+    .skills-list {
+      display: inline-block;
+      vertical-align: top;
+
+      h4 {
+        font-weight: 700;
+        margin: 10px 0;
+      }
+
+      li {
+        list-style-type: square;
+        line-height: 20px;
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .icon-license {
+    margin-left: 3px;
+  }
+}
+
+.line-break {
+  margin: 20px 0px;
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 1050px) {
+  .about-container {
+    padding-left: 50px;
+    .left-intro {
+      .greeting {
+        font-size: 90px;
+      }
+    }
+
+    .right-intro {
+      width: 45%;
+    }
+
+    .bottom-content {
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  .about-container {
+    .left-intro {
+      .greeting {
+        font-size: 70px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    .right-intro {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .about-container {
+    .left-intro {
+      width: 90%;
+    }
+
+    .detail {
+      .expand-button {
+        margin: 15px auto;
+      }
+
+      .expand-button-text {
+        display: none;
+      }
+    }
+
+    .right-intro {
+      float: none;
+      display: block;
+      width: 90%;
+
+      .image {
+        width: 90%;
+      }
+    }
+
+    .bottom-content {
+      width: 90%;
+
+      .quote {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .about-container {
+    .left-intro {
+      .intro {
+        font-size: 14px;
+      }
+    }
+  }
+  .bottom-content {
+    .content-block {
+      .section-header {
+        font-size: 25px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

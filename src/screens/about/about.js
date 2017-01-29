@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { slideUpAnimation } from '../../helpers/animations'
+import './about.scss'
 
 class About extends Component {
   constructor() {

@@ -1,7 +1,7 @@
-import React, { Component, PropTypes }            from 'react'
-import { iconSlide, slideHorizontally, showText } from '../../helpers/animations'
-import ProjectDetail                              from '../ProjectDetail/ProjectDetail.js'
-import ExpandIcon                                 from '../ExpandIcon/ExpandIcon.js'
+import React, { Component, PropTypes } from 'react'
+import { slideHorizontally, showText } from '../../helpers/animations.js'
+import ProjectDetail                   from '../ProjectDetail/ProjectDetail.js'
+import ExpandIcon                      from '../ExpandIcon/ExpandIcon.js'
 import './project-display.scss'
 
 class ProjectDisplay extends Component {
@@ -14,11 +14,9 @@ class ProjectDisplay extends Component {
   }
 
   componentDidMount() {
-    const icon = this.one
     const image = this.two
     const text = this.three
 
-    iconSlide(icon)
     slideHorizontally(image, 2, 100, 0.5)
     showText(text, 2, 1)
   }
@@ -27,6 +25,33 @@ class ProjectDisplay extends Component {
     this.setState({
       readMore: !this.state.readMore,
     })
+  }
+
+  getExpandIcon = () => {
+    const { detail, readMore } = this.state
+    if(detail) {
+      return (
+        <div>
+          <ExpandIcon
+            currentState={readMore}
+            handleClick={this.handleClick}
+            styleClass="displayCenter"
+          />
+          <p
+            className="read-more-text"
+            onClick={this.handleClick}
+          >
+            {this.getReadMoreText()}
+          </p>
+        </div>
+      )
+    }
+  }
+
+  getReadMoreText = () => {
+    if(this.state.readMore) return <span>Hide detail...</span>
+
+    return <span>Read more...</span>
   }
 
   render() {
@@ -38,7 +63,7 @@ class ProjectDisplay extends Component {
     const focusList = focus.map((item, index) => {
       return <li key={index}>{item}</li>
     })
-    const readMoreText = readMore ? 'Hide detail' : 'Read more...'
+
     return (
       <section className="project-container">
         <section className="image-container">
@@ -91,22 +116,7 @@ class ProjectDisplay extends Component {
           </div>
         </section>
         <section>
-          {detail
-            ?
-            <div>
-              <ExpandIcon
-                currentState={readMore}
-                handleClick={this.handleClick}
-                styleClass="displayCenter"
-              />
-              <p
-                className="read-more-text"
-                onClick={this.handleClick}
-              >
-                {readMoreText}
-              </p>
-            </div>
-            : ''}
+          {this.getExpandIcon()}
           {!!readMore && <ProjectDetail detail={detail} />}
         </section>
         <hr className="project-divider" />
@@ -120,7 +130,7 @@ ProjectDisplay.propTypes = {
   altText: PropTypes.string,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  liveLink: PropTypes.string.isRequired,
+  liveLink: PropTypes.string,
   gitHubLink: PropTypes.string.isRequired,
   tools: PropTypes.string.isRequired,
   focus: PropTypes.array.isRequired,

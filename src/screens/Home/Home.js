@@ -31,7 +31,7 @@ class Home extends Component {
                     RYAN
                   </h1>
                   <p className="card-text">
-                    I'm a frontend developer with a passion for startups and country music.
+                    Frontend developer with a passion for tech and the impact it can have.
                   </p>
                   <Link to="about">
                     <button className="home-btn">
@@ -47,7 +47,7 @@ class Home extends Component {
             >
               <div className="right-img">
                 <div className="right-text">
-                  <img src={lightningIcon} />
+                  <img src={lightningIcon} alt="icon with lightning bolt and code brackets" />
                   <h1 className="card-title">
                     MY WORK
                   </h1>

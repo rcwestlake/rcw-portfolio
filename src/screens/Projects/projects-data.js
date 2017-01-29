@@ -12,7 +12,7 @@
 
 const ProjectData = [
   {
-    title: 'Weathrly',
+    title: 'Weathrly - Group Project',
     imgSource: './images/weather-app-min.png',
     altText: 'Desktop and mobile screenshots of mobile app',
     description: 'A weather app built using React, Redux, and Geolocation.',
@@ -83,7 +83,7 @@ const ProjectData = [
     focus: ['Localstorage', 'JavaScript'],
     liveLink: 'https://mziccardi.github.io/2DoBox-Pivot/',
     gitHubLink: 'https://github.com/rcwestlake/2DoBox-Pivot',
-    detail: ['Our feature testing was done using webdriver.io and Selenium, unit tests were done using Mocha and Chai. The application is built with Javascript, jQuery, and Sass. Webpack is used to organize and compile our code.', '', ''],
+    detail: ['2DoBox was built with Javascript, jQuery, Sass, and Webpack. Our feature testing was done using webdriver.io and Selenium, unit tests were done using Mocha and Chai.'],
   },
 ]
 

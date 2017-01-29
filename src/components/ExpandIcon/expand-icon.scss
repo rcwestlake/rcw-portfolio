@@ -1,0 +1,17 @@
+.expand-button {
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+}
+
+.expand {
+  background-image: url('add-icon.png');
+  width: 42px;
+  height: 42px;
+}
+
+.close {
+  background-image: url('close-icon.png');
+  width: 42px;
+  height: 42px;
+}

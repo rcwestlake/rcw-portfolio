@@ -1,0 +1,170 @@
+@import '../../base_styles/colors';
+@import '../../base_styles/fonts';
+@import '../../base_styles/buttons';
+
+.main {
+  margin-top: 0px;
+}
+
+.home-container {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  opacity: 1;
+  height: 100%;
+
+  .option-left {
+    box-sizing: border-box;
+    height: 100%;
+    flex: 1;
+    background-color: rgb(40, 39, 39);
+    backface-visibility: hidden;
+
+    .left-img {
+      background-image: url("left-card-min.png");
+      background-size: cover;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+      &:before {
+        content: '';
+      	position: absolute;
+      	top: 0;
+      	right: 0;
+      	bottom: 0;
+      	left: 0;
+        background-color: rgb(40, 39, 39);
+        opacity: 0.05;
+      }
+    }
+
+    .left-text {
+      color: #000;
+      padding-top: 250px;
+      position: relative;
+    }
+  }
+
+  .option-right {
+    box-sizing: border-box;
+    height: 100%;
+    flex: 1;
+    position: relative;
+    opacity: 1;
+    z-index: 30;
+
+    .right-img {
+      background-image: url("right-card-min.png");
+      background-size: cover;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+
+      &:before {
+        content: '';
+      	position: absolute;
+      	top: 0;
+      	right: 0;
+      	bottom: 0;
+      	left: 0;
+      	background-color: rgb(40, 39, 39);
+        opacity: 0.9;
+        backface-visibility: visible;
+      }
+    }
+
+    .right-text {
+      color: $white;
+      padding-top: 250px;
+      position: relative;
+    }
+  }
+}
+
+.card-title {
+  font-family: $abril;
+  font-size: 65px;
+}
+
+.card-text {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.home-btn {
+  background-color: none;
+  background: none;
+  border: 2px solid $gold;
+  color: $gold;
+  font-size: 20px;
+  margin-top: 100px;
+  height: 75px;
+  width: 250px;
+
+  &:hover {
+    background-color: $gold;
+    border: none;
+    color: $white;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .options-container {
+    flex-direction: column;
+
+    .option-left {
+      height: 50%;
+
+      .left-text {
+        padding-top: 100px;
+      }
+    }
+
+    .option-right {
+      height: 50%;
+
+      .right-text {
+        padding-top: 100px;
+      }
+    }
+  }
+
+  .home-btn {
+    margin-top: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+  .home-btn {
+    font-size: 15px;
+    height: 50px;
+    width: 175px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .home-btn {
+    margin-top: 20px;
+  }
+
+  .card-title {
+    font-size: 45px;
+  }
+
+  .card-text {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}

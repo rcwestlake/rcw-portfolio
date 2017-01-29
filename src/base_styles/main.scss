@@ -1,0 +1,24 @@
+@import './reset/';
+@import './fonts';
+
+body {
+  font-family: $lato;
+}
+
+.main {
+  height: 100%;
+}
+
+.bold-span {
+  font-weight: bold;
+}
+
+hr {
+  height: 1px;
+}
+
+@media only screen and (min-width: 48em) {
+  .main {
+    padding-left: 125px;
+  }
+}

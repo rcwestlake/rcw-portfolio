@@ -1,13 +1,18 @@
 import React, {Component} from 'react';
+import Header             from './components/Header/Header.js'
 
 //styles
+import './base_styles/main.scss'
 import './App.scss';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>hello world</h1>
+        <Header />
+        <main className="main">
+          {this.props.children}
+        </main>
       </div>
     )
   }

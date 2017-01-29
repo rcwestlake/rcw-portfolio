@@ -62,7 +62,7 @@ const ProjectData = [
     tools: 'React Native, Firebase, XCode',
     focus: ['Building mobile first', 'Two week agile cycle', 'Pitching and leading project'],
     gitHubLink: 'https://github.com/rcwestlake/BudgetApp',
-    detail: ['This was a two week project in React. I thought it would be fun and challenging to build a mobile app with React Native, pitched the idea to instructors, and led the group throughout the two week timeframe. Given it was a new technology, we were only able to build an MVP, but the main functionality is there.', 'From the outset, our group (me and two others) decided to focus on quality over quantity, so made it a monthly-focused budget. Our goal was to build something that a new budgeter could easily pick up, use, and enjoy.', 'We use Sketch for wireframing the app and Firebase for the backend.'],
+    detail: ['This was a two week project in React. I thought it would be fun and challenging to build a mobile app with React Native, pitched the idea to instructors, and led the group throughout the two week timeframe. Given it was a new technology, we were only able to build an MVP, but the main functionality is there.', 'From the outset, our group (me and two others) decided to focus on quality over quantity, so made it a monthly-focused budget. Our goal was to build something that a new budgeter could easily pick up, use, and enjoy.', 'We used Sketch for wireframing the app and Firebase for the backend.'],
   },
   {
     title: '2048',

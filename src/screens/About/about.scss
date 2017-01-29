@@ -1,5 +1,5 @@
-@import '../partials/colors';
-@import '../partials/fonts';
+@import '../../base_styles/colors';
+@import '../../base_styles/fonts';
 
 .about-container {
   width: 100%;
@@ -55,9 +55,9 @@ p {
   width: 45%;
 
   .image {
-    background-image: url('../pages/about/images/rw-test-about.png');
+    background-image: url('ryan-westlake-pic-min.png');
     background-size: cover;
-    background-position: top;
+    background-position: 25%;
     height: 500px;
     width: 100%;
   }

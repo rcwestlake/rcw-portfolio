@@ -12,8 +12,8 @@
 
 const ProjectData = [
   {
-    title: 'Weathrly - Group Project',
-    imgSource: './images/weather-app-min.png',
+    title: 'Weathrly',
+    imgSource: 'weathrly',
     altText: 'Desktop and mobile screenshots of mobile app',
     description: 'A weather app built using React, Redux, and Geolocation.',
     tools: 'React, Redux, Firebase, Sass',
@@ -24,7 +24,7 @@ const ProjectData = [
   },
   {
     title: 'Github Notetaker',
-    imgSource: './images/projects/GithubNotes.png',
+    imgSource: 'githubNotetaker',
     altText: '4 screenshots of phone with Github Notetaker app',
     description: 'React Native app that uses the Github API',
     tools: 'React Native, Firebase',
@@ -34,7 +34,7 @@ const ProjectData = [
   },
   {
     title: 'chatterbox',
-    imgSource: './images/projects/chatterbox.png',
+    imgSource: 'chatterbox',
     altText: 'Screenshot on laptop and mobile of chatterbox app',
     description: 'Realtime chat app built with React and Firebase',
     tools: 'React, Firebase, Enzyme (testing), Webpack',
@@ -45,7 +45,7 @@ const ProjectData = [
   },
   {
     title: 'FareHarbor ToolKit',
-    imgSource: './images/projects/fareharbor.png',
+    imgSource: 'fareharbor',
     altText: 'Screenshot of FareHarbor project on laptop device',
     description: 'Real-world feature-set built for a startup in the online travel services industry',
     tools: 'Javascript, Node/Express',
@@ -56,17 +56,17 @@ const ProjectData = [
   },
   {
     title: 'PennyWise',
-    imgSource: './images/projects/PennyWise.png',
+    imgSource: 'pennyWise',
     altText: '4 screenshots of phone with PennyWise app',
     description: 'MVP budget app built with React Native',
     tools: 'React Native, Firebase, XCode',
     focus: ['Building mobile first', 'Two week agile cycle', 'Pitching and leading project'],
     gitHubLink: 'https://github.com/rcwestlake/BudgetApp',
-    detail: ['This was a two week project in React. I thought it would be fun and challenging to build a mobile app with React Native, pitched the idea to instructors, and led the group throughout the two week timeframe. Given it was a new technology, we were only able to build an MVP, but the main functionality is there.', 'From the outset, we decided to focus on quality over quantity, so made it a monthly-focused budget. Our goal was to build something that a new budgeter could easily pick up, use, and enjoy.', 'We use Sketch for wireframing the app and Firebase for the backend.'],
+    detail: ['This was a two week project in React. I thought it would be fun and challenging to build a mobile app with React Native, pitched the idea to instructors, and led the group throughout the two week timeframe. Given it was a new technology, we were only able to build an MVP, but the main functionality is there.', 'From the outset, our group (me and two others) decided to focus on quality over quantity, so made it a monthly-focused budget. Our goal was to build something that a new budgeter could easily pick up, use, and enjoy.', 'We use Sketch for wireframing the app and Firebase for the backend.'],
   },
   {
     title: '2048',
-    imgSource: './images/projects/2048.png',
+    imgSource: '2048',
     altText: 'Screenshot of 2048 project on laptop and mobile device',
     description: 'Clone of the popular 2048 game',
     tools: 'Javascript, jQuery, Mocha/Chai (testing)',
@@ -76,7 +76,7 @@ const ProjectData = [
   },
   {
     title: '2DoBox',
-    imgSource: './images/projects/2DoBox.png',
+    imgSource: '2DoBox',
     altText: 'Screenshot of 2DoBox project on laptop and mobile device',
     description: 'Simple 2Do app - users can filter, sort, and see completed tasks',
     tools: 'JavaScript, jQuery, Sass, Webpack',

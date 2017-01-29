@@ -2,6 +2,13 @@ import React, { Component, PropTypes } from 'react'
 import { slideHorizontally, showText } from '../../helpers/animations.js'
 import ProjectDetail                   from '../ProjectDetail/ProjectDetail.js'
 import ExpandIcon                      from '../ExpandIcon/ExpandIcon.js'
+import weathrly                        from './images/weather-app-min.png'
+import githubNotetaker                 from './images/GithubNotes-min.png'
+import chatterbox                      from './images/chatterbox-min.png'
+import fareharbor                      from './images/fareharbor-min.png'
+import pennyWise                       from './images/PennyWise-min.png'
+import twenty48                        from './images/2048-min.png'
+import toDoBox                         from './images/2DoBox-min.png'
 import './project-display.scss'
 
 class ProjectDisplay extends Component {
@@ -25,6 +32,29 @@ class ProjectDisplay extends Component {
     this.setState({
       readMore: !this.state.readMore,
     })
+  }
+
+  getImgSource = () => {
+    const { imgSource } = this.state
+
+    switch (imgSource) {
+      case 'weathrly':
+        return weathrly
+      case 'chatterbox':
+        return chatterbox
+      case 'githubNotetaker':
+        return githubNotetaker
+      case 'fareharbor':
+        return fareharbor
+      case 'pennyWise':
+        return pennyWise
+      case '2048':
+        return twenty48
+      case '2DoBox':
+        return toDoBox
+      default:
+        console.error('no imgSource specified in ProjectDisplay.js');
+    }
   }
 
   getExpandIcon = () => {
@@ -55,7 +85,7 @@ class ProjectDisplay extends Component {
   }
 
   render() {
-    const { title, description, imgSource, altText,
+    const { title, description, altText,
             liveLink, gitHubLink, tools, focus = [],
             detail, readMore,
           } = this.state
@@ -68,7 +98,7 @@ class ProjectDisplay extends Component {
       <section className="project-container">
         <section className="image-container">
           <img
-            src={`${imgSource}`}
+            src={`${this.getImgSource()}`}
             alt={`${altText}`}
             ref={(i) => { this.two = i }}
           />

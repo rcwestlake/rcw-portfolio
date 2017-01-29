@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
+import './expand-icon.scss'
 
 const ExpandIcon = ({ currentState, handleClick }) => {
-  const img = currentState ? 'add-icon.png' : 'close-icon.png'
+  const cName = currentState ? 'close' : 'expand'
   return (
-    <img
-      src={img}
+    <div
       alt="Icon to show/hide text"
-      className="expand-button"
+      className={`${cName} expand-button`}
       onClick={handleClick}
     />
   );

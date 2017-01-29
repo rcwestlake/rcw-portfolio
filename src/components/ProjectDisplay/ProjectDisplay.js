@@ -1,6 +1,7 @@
 import React, { Component, PropTypes }            from 'react'
 import ProjectDetail                              from '../ProjectDetail/ProjectDetail.js'
 import { iconSlide, slideHorizontally, showText } from '../../helpers/animations'
+import './project-display.scss'
 
 class ProjectDisplay extends Component {
   constructor(props) {

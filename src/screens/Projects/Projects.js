@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ProjectDisplay       from '../../components/ProjectDisplay/ProjectDisplay.js'
 import { slideUpAnimation } from '../../helpers/animations'
 import ProjectData          from './projects-data.js'
+import './projects.scss'
 
 class Projects extends Component {
   componentDidMount() {

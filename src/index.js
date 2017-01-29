@@ -1,8 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router'
+import App from './App'
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+const router = (
+  <Router history={browserHistory}>
+    <Route path='/' component={App} />
+  </Router>
+)

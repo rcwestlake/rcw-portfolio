@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { slideUpAnimation } from '../../helpers/animations'
 import ExpandIcon           from '../../components/ExpandIcon/ExpandIcon.js'
 import SimpleList           from '../../components/SimpleList/SimpleList.js'
+import LinkList             from '../../components/LinkList/LinkList.js'
 import './about.scss'
 
 class About extends Component {
@@ -81,11 +82,15 @@ class About extends Component {
               />
             </section>
             <section className="articles">
-              <h4 className="aside-header"></h4>
-              <ul>
-                <li><a href="https://medium.com/@rcwestlake/intro-javascript-module-pattern-5f39d3f468dc#.knytdvxfp" target="_blank" rel="noopener noreferrer">Intro: JavaScript Module Pattern</a></li>
-                <li><a href="https://medium.com/@rcwestlake/top-atom-packages-and-shortcuts-imho-934e28039ddc#.lnkjqcden" target="_blank" rel="noopener noreferrer">Top Atom Packages and Shortcuts (IMHO)</a></li>
-              </ul>
+              <LinkList
+                cName="aside-header"
+                header="ARTICLES I'VE WRITTEN:"
+                items={[['https://medium.com/@rcwestlake/intro-javascript-module-pattern-5f39d3f468dc#.knytdvxfp',
+                        'Intro: JavaScript Module Pattern'],
+                        ['https://medium.com/@rcwestlake/top-atom-packages-and-shortcuts-imho-934e28039ddc#.lnkjqcden',
+                        'Top Atom Packages and Shortcuts (IMHO)']
+                      ]}
+              />
             </section>
           </section>
         </aside>

@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { Link }             from 'react-router'
-import './home.scss'
 import { slideCards }       from '../../helpers/animations'
+import aboutIcon            from './about-icon.png'
+import lightningIcon        from './lightning-icon.png'
+import './home.scss'
 
 class Home extends Component {
   componentDidMount() {
@@ -24,9 +26,13 @@ class Home extends Component {
             >
               <div className="left-img">
                 <div className="left-text">
-                  <img src="about-icon.png" alt="icon with coffee mug and book" />
-                  <h1 className="card-title">RYAN</h1>
-                  <p className="card-text">I'm a frontend developer with a passion for startups and country music.</p>
+                  <img src={aboutIcon} alt="icon with coffee mug and book" />
+                  <h1 className="card-title">
+                    RYAN
+                  </h1>
+                  <p className="card-text">
+                    I'm a frontend developer with a passion for startups and country music.
+                  </p>
                   <Link to="about/">
                     <button className="home-btn">
                       ABOUT ME
@@ -41,9 +47,13 @@ class Home extends Component {
             >
               <div className="right-img">
                 <div className="right-text">
-                  <img src="lightning-icon.png" alt="icon with lightning bold and code brackets" />
-                  <h1 className="card-title">MY WORK</h1>
-                  <p className="card-text">Always trying to write simpler, more beautiful code.</p>
+                  <img src={lightningIcon} />
+                  <h1 className="card-title">
+                    MY WORK
+                  </h1>
+                  <p className="card-text">
+                    Always trying to write simpler, more beautiful code.
+                  </p>
                   <Link to="/portfolio/">
                     <button className="home-btn">
                       VIEW PORTFOLIO

@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import Header from './components/Header/Header.js'
+import Header             from './components/Header/Header.js'
 
 //styles
+import './base_styles/main.scss'
 import './App.scss';
 
 class App extends Component {
@@ -9,7 +10,9 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        {this.props.children}
+        <main className="main">
+          {this.props.children}
+        </main>
       </div>
     )
   }

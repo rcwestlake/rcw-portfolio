@@ -1,6 +1,7 @@
-import React, { Component, PropTypes } from 'react'
-import { Link } from 'react-router'
-import { openMenuAnimation, leaveMenuAnimation } from '../../helpers/animations'
+import React, { Component, PropTypes }           from 'react'
+import { Link }                                  from 'react-router'
+import { openMenuAnimation, leaveMenuAnimation } from '../../helpers/animations.js'
+import './menu.scss'
 
 class Menu extends Component {
   componentDidMount() {
@@ -42,21 +43,36 @@ class Menu extends Component {
               onClick={toggleNav}
               ref={(item) => { this.two = item }}
             >
-              <Link to="/portfolio/">portfolio</Link>
+              <Link
+                activeStyle={{color:'#395EA6'}}
+                to="/portfolio/"
+              >
+                portfolio
+              </Link>
             </li>
             <li
               className="menu-item"
               onClick={toggleNav}
               ref={(item) => { this.three = item }}
             >
-              <Link to="/about/">about</Link>
+              <Link
+                activeStyle={{color:'#395EA6'}}
+                to="/about/"
+              >
+                about
+              </Link>
             </li>
             <li
               className="menu-item"
               onClick={toggleNav}
               ref={(item) => { this.four = item }}
             >
-              <Link to="/contact/">contact</Link>
+              <Link
+                activeStyle={{color:'#395EA6'}}
+                to="/contact/"
+              >
+                contact
+              </Link>
             </li>
           </ul>
         </nav>

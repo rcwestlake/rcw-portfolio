@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import ReactTransitionGroup from 'react-addons-transition-group'
 import { Link } from 'react-router'
 import Menu from '../Menu/Menu.js'

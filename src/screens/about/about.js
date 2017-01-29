@@ -30,7 +30,7 @@ class About extends Component {
       <p>
         I enjoy working hard, and view it as a privilege to work with
         others to solve challenging problems, something outside my comfort zone. Like our lives, I believe technology should serve a purpose, whether that's in the consumer/
-        enterprise market or profit/non-profit.
+        enterprise market or profit/non-profit. I'd enjoy the opportunity to connect, you can <a href="mailto:ryancwestlake@gmail.com">email me here</a>.
       </p>
     )
   }
@@ -48,11 +48,10 @@ class About extends Component {
           <p className="intro">
             Born in Maryland. Raised in Montana (unfortunately not a ranch). Former M&A analyst turned developer. In short, a code-writing, gym-going, mountain-hiking, occasionalfunnyjoke-telling, biography-reading, sort of guy.
           </p>
+          <p className="intro">
+            My story is a bit out of the ordinary. When I was 17, right after graduating high school, I started working full-time for a mergers & aquisition firm where I earned stripes as an analyst. While there I had the opportunity to take part in some exciting projects, including closing a deal with Berkshire Hathaway. It served as a terrific platform to jump from, and I am grateful for it. Seven months ago, I decided to pursue a field I found fascinating -- technology. It's my dream to be part of building a high-growth, value-orientated startup, and I knew to get there, I needed the skills to be a strong contributor. I picked <a href="https://www.turing.io" target="_blank" rel="noopener noreferrer">Turing School of Software & Design</a>, and am excited for what lies ahead.
+          </p>
           <section className="detail">
-            <p>
-              My story is a bit out of the ordinary. When I was 17, right after graduating high school, I started working full-time for a mergers & aquisition firm where I earned stripes as an analyst. While there I had the opportunity to take part in some exciting projects, including closing a deal with Berkshire Hathaway. It served as a terrific platform to jump from, and I am grateful for it. Seven months ago, I decided to pursue a field I found fascinating -- technology. It's my dream to be part of building a high-growth, value-orientated startup, and I knew to get there, I needed the skills to be a strong contributor. I picked <a href="https://www.turing.io" target="_blank" rel="noopener noreferrer">Turing School of Software & Design</a>, and am excited for what lies ahead.
-            </p>
-
             {!!expanded && <span>{this.getExpandedText()}</span>}
             <ExpandIcon
               currentState={expanded}
@@ -109,21 +108,30 @@ class About extends Component {
             <h3 className="section-header">
               Background
             </h3>
-            <p>Sep 2012 - Aug 2016 -- Analyst at <a href="http://www.compass-advisors.com" target="_blank" rel="noopener noreferrer">
-                 Compass Advisors
-              </a>
-            </p>
-            <p>Oct 2016 - Present -- Investor at <a href="http://www.vidangel.com" target="_blank" rel="noopener noreferrer">
-                 VidAngel
-              </a> (through their private stock offering). No other affiliation.
-            </p>
-            <p>Jul 2013 - Jul 2014 -- Digital Marketing at <a href="http://www.cowgirldirt.com" target="_blank" rel="noopener noreferrer">
-                 Cowgirl Dirt
-              </a>
-            </p>
-            <p>
-              May 2012 - Sep 2012 -- Farm Hard at Wheat Ridge Farms (lived like a farmer for a summer)
-            </p>
+            <div className="background-detail">
+              <p className="position">Analyst at <a href="http://www.compass-advisors.com" target="_blank" rel="noopener noreferrer"> Compass Advisors</a></p>
+              <p className="date">Sep 2012 - Aug 2016</p>
+            </div>
+            <div className="background-detail">
+              <p className="position">Investor at <a href="http://www.vidangel.com" target="_blank" rel="noopener noreferrer">
+                VidAngel
+                </a> (through their private stock offering). No other affiliation.
+              </p>
+              <p className="date">Oct 2016 - Present</p>
+            </div>
+            <div className="background-detail">
+              <p className="position">Digital Marketing at <a href="http://www.cowgirldirt.com" target="_blank" rel="noopener noreferrer">
+                Cowgirl Dirt
+                </a>
+              </p>
+              <p className="date">Jul 2013 - Jul 2014</p>
+            </div>
+            <div className="background-detail">
+              <p className="position">
+                Farm Hard at Wheat Ridge Farms (lived like a farmer for a summer)
+              </p>
+              <p className="date">May 2012 - Sep 2012</p>
+            </div>
             <hr className="line-break" />
             <p>You can view my LinkedIn <a href="https://www.linkedin.com/in/ryancwestlake" target="_blank" rel="noopener noreferrer">
                  here
@@ -170,21 +178,21 @@ class About extends Component {
               />
             </div>
           </section>
-          <section className="content-block">
+          <section className="content-block looking">
             <h3 className="section-header">
               What I'm Looking For
             </h3>
-            <p>
+            <p className="spaced-p">
               A place to work with good people, working on a tough problem,
               who care about design, and enjoy living life. On a more personal level,
               I would love an opportunity where I can learn what it takes to grow a business on a large scale.
             </p>
           </section>
-          <section className="content-block">
+          <section className="content-block about-site">
             <h3 className="section-header">
               About this Site
             </h3>
-            <p>
+            <p className="spaced-p">
               This site has been designed and built by hand from the ground up.
               It's handled through React and animated with GreenSock Animation Platform.
               The CSS is written in Sass (scss) and is responsive.</p>

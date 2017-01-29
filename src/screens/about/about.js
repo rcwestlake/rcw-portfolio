@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { slideUpAnimation } from '../../helpers/animations'
+import ExpandIcon           from '../../components/ExpandIcon/ExpandIcon.js'
 import './about.scss'
 
 class About extends Component {
@@ -22,11 +23,15 @@ class About extends Component {
     })
   }
 
+  getExpandedText = () => {
+    return (
+      <p>My story is a bit out of the ordinary. When I was 17, right after graduating high school, I started working full-time for a mergers & aquisition firm where I earned a few stripes as an analyst. While there I had the opportunity to take part in some exciting projects, including closing a deal with Berkshire Hathaway. It served as a terrific platform to jump from, and I am grateful for it. Seven months ago, I decided to pursue a field I found fascinating -- technology. It's my dream to be part of building a high-growth, value-orientated startup, and I knew to get there, I needed the skills to be a strong contributor. I picked <a href="https://www.turing.io" target="_blank" rel="noopener noreferrer">Turing School of Software & Design</a>, and am excited for what lies ahead.</p>
+    )
+  }
+
   render() {
     const { expanded } = this.state
-    const expandedIcon = expanded ? './images/icons/close-icon.png' : './images/icons/add-icon.png'
     const expandedButtonText = expanded ? <span>Close...</span> : <span>More about me...</span>
-    const expandedText = <p>My story is a bit out of the ordinary. When I was 17, right after graduating high school, I started working full-time for a mergers & aquisition firm where I earned a few stripes as an analyst. While there I had the opportunity to take part in some exciting projects, including closing a deal with Berkshire Hathaway. It served as a terrific platform to jump from, and I am grateful for it. Seven months ago, I decided to pursue a field I found fascinating -- technology. It's my dream to be part of building a high-growth, value-orientated startup, and I knew to get there, I needed the skills to be a strong contributor. I picked <a href="https://www.turing.io" target="_blank" rel="noopener noreferrer">Turing School of Software & Design.</a></p>
 
     return (
       <div className="about-container" ref={(item) => { this.one = item }}>
@@ -43,13 +48,10 @@ class About extends Component {
               others to solve challenging problems, something outside my comfort zone, for it's in those moment, when we're stretched beyond our self-defined limits, we learn the most. Like our lives, I believe technology should serve a purpose, whether that's in the consumer/
               enterprise market or profit/non-profit.
             </p>
-            {!!expanded && <span>{expandedText}</span>}
-            <img
-              src={expandedIcon}
-              alt="Icon to show/hide text"
-              className="expand-button"
-              onClick={this.toggleExpanded}
-            />
+            {!!expanded && <span>{this.getExpandedText()}</span>}
+            <ExpandIcon
+              currentState={expanded}
+              handleClick={this.toggleExpanded} />
             <span className="expand-button-text">{expandedButtonText}</span>
           </section>
         </section>
@@ -61,7 +63,7 @@ class About extends Component {
               <ul>
                 <li>I ride a motorcycle (Yamaha V Star)</li>
                 <li>Brownies and ice cream are my favorite dessert</li>
-                <li>I played the trumpet for 6 years</li>
+                <li>Took a picture with Jack Nicklaus (golfer)</li>
               </ul>
             </section>
             <section className="favorites">
@@ -111,12 +113,12 @@ class About extends Component {
               <h4>Technologies</h4>
               <ul>
                 <li>JavaSript</li>
+                <li>jQuery</li>
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>Sass</li>
                 <li>React</li>
                 <li>Redux</li>
-                <li>jQuery</li>
                 <li>Webpack</li>
                 <li>Node/Express</li>
                 <li>Unit/Feature Testing</li>
@@ -126,7 +128,7 @@ class About extends Component {
               <h4>Soft</h4>
               <ul>
                 <li>Clear communication</li>
-                <li>Managing projects with moving pieces</li>
+                <li>Project management</li>
                 <li>Honesty</li>
                 <li>Radical candor (work in progress)</li>
                 <li>Decent golf swing</li>

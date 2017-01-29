@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import ProjectDisplay from '../../components/ProjectDisplay'
+import ProjectDisplay       from '../../components/ProjectDisplay/ProjectDisplay.js'
 import { slideUpAnimation } from '../../helpers/animations'
-import ProjectData from './projects-data'
+import ProjectData          from './projects-data.js'
 
 class Projects extends Component {
   componentDidMount() {

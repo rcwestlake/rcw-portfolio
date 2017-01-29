@@ -33,7 +33,7 @@ class Home extends Component {
                   <p className="card-text">
                     I'm a frontend developer with a passion for startups and country music.
                   </p>
-                  <Link to="about/">
+                  <Link to="about">
                     <button className="home-btn">
                       ABOUT ME
                     </button>
@@ -54,7 +54,7 @@ class Home extends Component {
                   <p className="card-text">
                     Always trying to write simpler, more beautiful code.
                   </p>
-                  <Link to="/portfolio/">
+                  <Link to="projects">
                     <button className="home-btn">
                       VIEW PORTFOLIO
                     </button>

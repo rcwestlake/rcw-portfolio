@@ -12,7 +12,7 @@ class Projects extends Component {
   }
 
   render() {
-    const projects = Projects.map((project, index) => {
+    const projects = ProjectData.map((project, index) => {
       return (
         <ProjectDisplay
           key={index}

@@ -13,7 +13,7 @@
 const ProjectData = [
   {
     title: 'Weathrly',
-    imgSource: './images/projects/weather-app.png',
+    imgSource: './images/weather-app-min.png',
     altText: 'Desktop and mobile screenshots of mobile app',
     description: 'A weather app built using React, Redux, and Geolocation.',
     tools: 'React, Redux, Firebase, Sass',

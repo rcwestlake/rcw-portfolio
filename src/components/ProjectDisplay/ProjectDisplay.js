@@ -1,6 +1,7 @@
 import React, { Component, PropTypes }            from 'react'
-import ProjectDetail                              from '../ProjectDetail/ProjectDetail.js'
 import { iconSlide, slideHorizontally, showText } from '../../helpers/animations'
+import ProjectDetail                              from '../ProjectDetail/ProjectDetail.js'
+import ExpandIcon                                 from '../ExpandIcon/ExpandIcon.js'
 import './project-display.scss'
 
 class ProjectDisplay extends Component {
@@ -93,12 +94,10 @@ class ProjectDisplay extends Component {
           {detail
             ?
             <div>
-              <img
-                src={readMore ? './images/close-icon.png' : './images/add-icon.png'}
-                alt="read more icon"
-                className="read-more-icon"
-                onClick={this.handleClick}
-                ref={(i) => { this.one = i }}
+              <ExpandIcon
+                currentState={readMore}
+                handleClick={this.handleClick}
+                styleClass="displayCenter"
               />
               <p
                 className="read-more-text"

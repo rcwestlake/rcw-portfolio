@@ -1,0 +1,96 @@
+@import '../../base_styles/colors';
+@import '../../base_styles/fonts';
+
+
+.contact-container {
+  margin: 0px auto;
+  margin-top: 100px;
+  position: relative;
+  top: 50%;
+  width: 80%;
+}
+
+.greeting-container {
+  width: 100%;
+  text-align: center;
+}
+
+.greeting {
+  font-family: $raleway;
+  font-size: 100px;
+  font-weight: 700;
+  margin: auto;
+}
+
+.detail-container {
+  text-align: center;
+
+  p {
+    font-size: 20px;
+    margin: 25px auto;
+    text-align: center;
+    width: 40%;
+  }
+
+  ul {
+    width: 100%;
+    margin-top: 3%;
+
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+a {
+  color: $mid-blue;
+  text-decoration: none;
+}
+
+.gif-container {
+
+  h4 {
+    margin-top: 45px;
+    font-style: italic;
+  }
+
+  .gif {
+    margin: 30px auto;
+    height: 200px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .greeting {
+    font-size: 70px
+  }
+
+  .detail-container {
+
+    p {
+      width: 90%;
+    }
+
+    ul li {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .greeting {
+    font-size: 60px
+  }
+
+  .detail-container {
+
+    p {
+      width: 100%;
+    }
+
+    ul li {
+      display: block;
+    }
+  }
+}

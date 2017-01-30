@@ -45,9 +45,9 @@ class Menu extends Component {
             >
               <Link
                 activeStyle={{color:'#395EA6'}}
-                to="/portfolio/"
+                to="projects/"
               >
-                portfolio
+                projects
               </Link>
             </li>
             <li
@@ -57,7 +57,7 @@ class Menu extends Component {
             >
               <Link
                 activeStyle={{color:'#395EA6'}}
-                to="/about/"
+                to="about/"
               >
                 about
               </Link>
@@ -69,7 +69,7 @@ class Menu extends Component {
             >
               <Link
                 activeStyle={{color:'#395EA6'}}
-                to="/contact/"
+                to="contact/"
               >
                 contact
               </Link>

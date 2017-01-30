@@ -5,9 +5,9 @@ const SimpleList = ({ cName, header, items }) => {
     <div>
       <h4 className={cName}>{header}</h4>
       <ul>
-        {items.map(item => {
+        {items.map((item, i) => {
           return (
-            <li>{item}</li>
+            <li key={i}>{item}</li>
           )
         })}
       </ul>

@@ -5,9 +5,9 @@ const LinkList = ({ cName, header, items }) => {
     <div>
       <h4 className={cName}>{header}</h4>
       <ul>
-        {items.map(item => {
+        {items.map((item, i) => {
           return (
-            <li>
+            <li key={i}>
               <a
                 href={item[0]}
                 target="_blank"

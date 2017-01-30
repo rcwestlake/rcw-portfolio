@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 import App      from './App'
 import Home     from './screens/Home/Home.js'
-import About    from './screens/About/About.js'
+import About    from './screens/Abt/Abt.js'
 import Projects from './screens/Projects/Projects.js'
-import Contact from './screens/Contact/Contact.js'
+import Contact  from './screens/Contact/Contact.js'
 import NotFound from './screens/NotFound/NotFound.js'
 
 const router = (

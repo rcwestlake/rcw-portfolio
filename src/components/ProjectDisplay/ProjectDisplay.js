@@ -9,6 +9,7 @@ import fareharbor                      from './images/fareharbor-min.png'
 import pennyWise                       from './images/PennyWise-min.png'
 import twenty48                        from './images/2048-min.png'
 import toDoBox                         from './images/2DoBox-min.png'
+import pollr                           from './images/pollr-min.png'
 import './project-display.scss'
 
 class ProjectDisplay extends Component {
@@ -38,6 +39,8 @@ class ProjectDisplay extends Component {
     const { imgSource } = this.state
 
     switch (imgSource) {
+      case 'pollr':
+        return pollr
       case 'weathrly':
         return weathrly
       case 'chatterbox':

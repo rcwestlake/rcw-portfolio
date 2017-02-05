@@ -12,6 +12,17 @@
 
 const ProjectData = [
   {
+    title: 'Pollr',
+    imgSource: 'pollr',
+    altText: 'Screenshot of pollr project',
+    description: 'A realtime survey/polling app focused on authentication and websockets.',
+    tools: 'jQuery, Auth0, WebSockets, Node.js',
+    focus: ['Realtime application', 'Auth', 'Fundamental Javascript/jQuery'],
+    liveLink: 'http://pollr-al.herokuapp.com/',
+    gitHubLink: 'https://github.com/rcwestlake/pollr',
+    detail: ['The project spec required Github authentication with Auth0. Anyone can create a poll, however, to vote, you need to login. Once you do, your profile image shows up under your vote choice. Using WebSockets, the poll results show up in realtime.'],
+  },
+  {
     title: 'Weathrly',
     imgSource: 'weathrly',
     altText: 'Desktop and mobile screenshots of mobile app',

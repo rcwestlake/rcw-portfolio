@@ -10,6 +10,7 @@ import pennyWise                       from './images/PennyWise-min.png'
 import twenty48                        from './images/2048-min.png'
 import toDoBox                         from './images/2DoBox-min.png'
 import pollr                           from './images/pollr-min.png'
+import dockjs                          from './images/dock_js-min.png'
 import './project-display.scss'
 
 class ProjectDisplay extends Component {
@@ -55,6 +56,8 @@ class ProjectDisplay extends Component {
         return twenty48
       case '2DoBox':
         return toDoBox
+      case 'dockjs':
+        return dockjs
       default:
         console.error('no imgSource specified in ProjectDisplay.js');
     }

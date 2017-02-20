@@ -128,7 +128,7 @@ class About extends Component {
             </div>
             <div className="background-detail">
               <p className="position">
-                Farm Hard at Wheat Ridge Farms (lived like a farmer for a summer)
+                Farm Hand at Wheat Ridge Farms (lived like a farmer for a summer)
               </p>
               <p className="date">May 2012 - Sep 2012</p>
             </div>
